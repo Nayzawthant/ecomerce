@@ -33,7 +33,7 @@
             <p>Products</p>
           </a>
         </li>
-        <li class="nav-item {{ Request::is('add-product') ? 'active':''; }}  ">
+        <li class="nav-item {{ Request::is('add-products') ? 'active':''; }}  ">
             <a class="nav-link" href="{{ url('add-products') }}">
               <i class="material-icons">person</i>
               <p>Add Product</p>
