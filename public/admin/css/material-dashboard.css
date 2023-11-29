@@ -17233,8 +17233,13 @@ label {
 }
 
 .card .card-header {
+  display: flex;
   border-bottom: none;
   background: transparent;
+}
+
+.card .card-header .product-title {
+  color: #C41230;
 }
 
 .card .card-header .title {
