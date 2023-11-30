@@ -17233,7 +17233,7 @@ label {
 }
 
 .card .card-header {
-  display: flex;
+  /* display: flex; */
   border-bottom: none;
   background: transparent;
 }
