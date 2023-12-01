@@ -47,7 +47,8 @@
                     <div class="col-md-12">
                         <input type="file" name="image" class="form-control">
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-12 mt-3">
+                        <a href="{{ url('categories') }}" class="btn btn-danger back">Back</a>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
 
