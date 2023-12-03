@@ -12,10 +12,10 @@
             <p>Dashboard</p>
           </a>
         </li>
-        <li class="nav-item {{ Request::is('categories') ? 'active':''; }} ">
-          <a class="nav-link" href="{{ url('categories') }}">
+        <li class="nav-item {{ Request::is('slides') ? 'active':''; }} ">
+          <a class="nav-link" href="{{ url('slides') }}">
             <i class="material-icons">person</i>
-            <p>Categories</p>
+            <p>HeroSlides</p>
           </a>
         </li>
 
@@ -25,6 +25,15 @@
             <p>Products</p>
           </a>
         </li>
+
+        <li class="nav-item {{ Request::is('categories') ? 'active':''; }} ">
+          <a class="nav-link" href="{{ url('categories') }}">
+            <i class="material-icons">person</i>
+            <p>Categories</p>
+          </a>
+        </li>
+
+        
 
       </ul>
     </div>
