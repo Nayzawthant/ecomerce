@@ -33,6 +33,13 @@
           </a>
         </li>
 
+        <li class="nav-item {{ Request::is('news') ? 'active':''; }} ">
+          <a class="nav-link" href="{{ url('news') }}">
+            <i class="material-icons">person</i>
+            <p>News</p>
+          </a>
+        </li>
+
         
 
       </ul>

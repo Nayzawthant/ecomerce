@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\NewController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\SlideController;
 use Illuminate\Support\Facades\Auth;
@@ -46,4 +47,14 @@ Route::middleware(['auth', 'isAdmin'])->group(function() {
     Route::get('slides', [SlideController::class, 'index']);
     Route::get('add-slides', [SlideController::class, 'add']);
     Route::post('insert-slide', [SlideController::class, 'insert']);
+    Route::get('edit-slide/{id}', [SlideController::class, 'edit']);
+    Route::put('update-slide/{id}', [SlideController::class, 'update']);
+    Route::get('delete-slide/{id}', [SlideController::class, 'destroy']);
+
+    Route::get('news', [NewController::class, 'index']);
+    Route::get('add-news', [NewController::class, 'add']);
+    Route::post('insert-new', [NewController::class, 'insert']);
+    Route::get('edit-news/{id}', [NewController::class, 'edit']);
+    Route::put('update-news/{id}', [NewController::class, 'update']);
+    Route::get('delete-news/{id}', [NewController::class, 'destroy']);
 });
