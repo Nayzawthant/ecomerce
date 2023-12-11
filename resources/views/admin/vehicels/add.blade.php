@@ -3,7 +3,7 @@
 @section('content')
     <div class="card">
         <div class="card-header">
-            <h4>Add Products</h4>
+            <h4>Add Vehicels</h4>
         </div>
         <div class="card-body">
             <form action="{{ url('insert-product') }}" method="post" enctype="multipart/form-data">
