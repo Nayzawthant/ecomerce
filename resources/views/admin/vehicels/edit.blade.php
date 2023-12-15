@@ -30,7 +30,7 @@
                     <div class="col-md-12 mt-3">
                         <a href="{{ url('products') }}" class="btn btn-danger back">Back</a>
                         <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
+                    </div> 
 
                 </div>
             </form>
